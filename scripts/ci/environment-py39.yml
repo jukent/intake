@@ -1,7 +1,6 @@
 name: test_env
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.9
   - aiohttp
@@ -21,7 +20,6 @@ dependencies:
   - panel
   - hvplot
   - bokeh
-  - dask
   - intake
   - pip
   - pytest
@@ -34,7 +32,12 @@ dependencies:
   - typer
   - pydantic >=1.8
   - sqlalchemy
-  - click==8.0  # https://github.com/tiangolo/typer/issues/377 until typer release
-  - pip:
-       - rangehttpserver
-       - tiled[all]
+  - click
+  - rangehttpserver
+  - pre-commit
+  - sqlalchemy
+  - python-duckdb
+  - pytest-postgresql
+  - psycopg
+  - siphon
+  - postgresql
